@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Broadline</title>
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <!-- <a href="#"><img class="header__logo" src="img/logo.png" alt="Логотип Broadline"></a> -->
+      <a href="#">
+        <picture>
+          <source class="header__logo" type="image/webp" srcset="img/logo.webp">
+          <source class="header__logo" type="image/png" srcset="img/logo.png">
+          <img class="header__logo" src="img/logo.png" loading="lazy" alt="{{ bf_img_alt }}">
+        </picture>
+      </a>
+      <menu>
+        <div class="header-menu">
+          <a class="header-menu__elem" href="">Переваги</a>
+          <a class="header-menu__elem" href="">Спектр дії</a>
+          <a class="header-menu__elem" href="">Застосування</a>
+          <a class="header-menu__elem" href="">Інструкція</a>
+          <a class="header-menu__elem" href="">Придбати</a>
+        </div>
+        <!-- hamburger start -->
+        <input id="hamburger" class="hamburger" type="checkbox" />
+        <label class="hamburger" for="hamburger">
+          <i></i>
+        </label>
+        <section class="drawer-list">
+          <ul>
+            <li><a href="#">Переваги</a></li>
+            <li><a href="#">Спектр дії</a></li>
+            <li><a href="#">Застосування</a></li>
+            <li><a href="#">Інструкція</a></li>
+            <li><a href="#">Придбати</a></li>
+          </ul>
+        </section>
+        <!-- hamburger end -->
+      </menu>
+    </header>
+    <!-- presentation start -->
+    <section class="presentation">
+      <div class="presentation__big-cat">
+        <!-- <img src="img/big-cat.png" alt="Кот"> -->
+        <picture>
+          <source type="image/webp" srcset="img/big-cat.webp">
+          <source type="image/png" srcset="img/big-cat.png">
+          <img src="img/big-cat.png" loading="lazy" alt="{{ bf_img_alt }}">
+        </picture>
+      </div>
+      <div class="presentation__block">
+        <div class="presentation__solution-for-external-use">
+          <!-- <img src="img/solution-for-external-use.png" alt="Раствор Broadline для внешнего применения"> -->
+          <picture>
+            <source type="image/webp" srcset="img/solution-for-external-use.webp">
+            <source type="image/png" srcset="img/solution-for-external-use.png">
+            <img src="img/solution-for-external-use.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+        </div>
+        <button class="btn btn-acquire">Придбати</button>
+        <div class="presentation__text">Cпеціально для котів,<br> тому що вони особливі</div>
+      </div>
+    </section>
+    <!-- presentation end -->
+    <!-- advantages start -->
+    <section class="advantages">
+      <h2 class="h2-caption">Основні переваги</h2>
+      <div class="advantages__container mobile-padding">
+        <div class="box">
+          <!-- <img class="box__icon" src="img/parasites.png" alt="Паразити"> -->
+          <picture>
+            <source class="box__icon" type="image/webp" srcset="img/parasites.webp">
+            <source class="box__icon" type="image/png" srcset="img/parasites.png">
+            <img class="box__icon" src="img/parasites.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="box__wrapper">
+            <h3 class="box__caption">ВІД БЛІХ, КЛІЩІВ ТА <br> ГЕЛЬМІНТІВ</h3>
+            <p class="box__text">
+              Один препарат для боротьби відразу з 22 внутрішніми і зовнішніми паразитами
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <!-- <img class="box__icon" src="img/dosage.png" alt="Дозировка"> -->
+          <picture>
+            <source class="box__icon" type="image/webp" srcset="img/dosage.webp">
+            <source class="box__icon" type="image/png" srcset="img/dosage.png">
+            <img class="box__icon" src="img/dosage.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="wrapper">
+            <h3 class="box__caption">ПРАВИЛЬНЕ ДОЗУВАННЯ? <br> ЛЕГКО!</h3>
+            <p class="box__text">
+              Інноваційний аплікатор - акуратність застосування і точність дозування один раз на місяць
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <!-- <img class="box__icon" src="img/injection.png" alt="Укол"> -->
+          <picture>
+            <source class="box__icon" type="image/webp" srcset="img/injection.webp">
+            <source class="box__icon" type="image/png" srcset="img/injection.png">
+            <img class="box__icon" src="img/injection.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="box__wrapper">
+            <h3 class="box__caption">МІНІМУМ <br> СТРЕСУ</h3>
+            <p class="box__text">
+              Легка і швидка обробка при використанні препарату в зручному аплікаторі в формі крапельна холку
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <!-- <img class="box__icon" src="img/kitty.png" alt="Кошення"> -->
+          <picture>
+            <source class="box__icon" type="image/webp" srcset="img/kitty.webp">
+            <source class="box__icon" type="image/png" srcset="img/kitty.png">
+            <img class="box__icon" src="img/kitty.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="box__wrapper">
+            <h3 class="box__caption">ПРОФІЛЬ <br> БЕЗПЕКИ</h3>
+            <p class="box__text">
+              Можна кошенятам з 7 тижневого віку і масою тіла від 600 гр
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <!-- <img class="box__icon" src="img/protection_mark.png" alt="Знак захисту"> -->
+          <picture>
+            <source class="box__icon" type="image/webp" srcset="img/protection_mark.webp">
+            <source class="box__icon" type="image/png" srcset="img/protection_mark.png">
+            <img class="box__icon" src="img/protection_mark.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="box__wrapper">
+            <h3 class="box__caption">НІЧОГО <br> ЗАЙВОГО</h3>
+            <p class="box__text">
+              БЕЗ контакту рук з обробленою шкірою
+              <br>тварини
+              <br>БЕЗ протікання препарату з аплікатора
+              <br>БЕЗ залишку препарату на руках
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- advantages end -->
+    <!-- range-of-actions start -->
+    <section class="range-of-actions">
+      <h2 class="h2-caption">Спектр дії</h2>
+      <div class="range-of-actions__container">
+        <div class="range-of-actions__box range-of-actions__box--left">
+          <div class="range-of-actions__box-heading range-of-actions__box-heading--green">Зовнішні паразити</div>
+          <div class="range-of-actions__wrapper range-of-actions__wrapper--left mobile-padding">
+            <div class="range-of-actions__wrapper-inner">
+              <p class="range-of-actions__text">
+                До 70% котів заражені <span>блохами</span><sup>1</sup>
+              </p>
+              <br>
+              <p class="range-of-actions__text">
+                <span>Блохи</span> – одна з основних причин алергічного дерматиту і є <span>переносниками</span>
+                інфекційних захворювань - рикетсіоз, мікоплазмоз, феліноз або «хвороба котячих подряпин»
+              </p>
+            </div>
+            <div class="range-of-actions__wrapper-inner">
+              <div class="parasite-icons parasite-icons--left">
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--green flea"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--green">Блохи</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--green flea-eggs"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--green">Яйця бліх</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--green larvae"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--green">Личинки бліх</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--green pincers"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--green">Іксодові кліщі</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--green scabies-mites"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--green">Коростяні кліщі</div>
+                </div>
+              </div>
+              <div class="range-of-actions__note">
+                1 - Beck at al, 2006; Bonds et al, 2007; Farkas et al, 2008; Beugnet et al, 2010
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="range-of-actions__box range-of-actions__box--right">
+          <div class="range-of-actions__box-heading range-of-actions__box-heading--red">Внутрішні паразити</div>
+          <div class="range-of-actions__wrapper range-of-actions__wrapper--right mobile-padding">
+            <div class="range-of-actions__wrapper-inner">
+              <p class="range-of-actions__text range-of-actions__text--right">
+                До 30% котів заражені <span>гельмінтами</span><sup>2</sup>
+              </p>
+              <br>
+              <p class="range-of-actions__text range-of-actions__text--right">
+                Більше <span>10 видів</span> гельмінтів паразитують в організмі кота <span>4</span> з них <span>є
+                  спільними</span> для кота і людини
+              </p>
+            </div>
+            <div class="range-of-actions__wrapper-inner">
+              <div class="parasite-icons parasite-icons--right">
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--red roundworms"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--red">Аскариди</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--red ankylos-volumes"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--red">Анкілостоми</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--red echinococci"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--red">Ехінококи</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--red dipilidia"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--red">Дипілідії</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--red pulmonary-helminths"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--red">Легеневі
+                    гельмінти</div>
+                </div>
+                <div class="parasite-icons__elem">
+                  <div class="parasite-icons__elem-img parasite-icons__elem-img--red cardiac-helminths"></div>
+                  <div class="parasite-icons__elem-name parasite-icons__elem-name--red">Серцеві
+                    гельмінти</div>
+                </div>
+              </div>
+              <div class="range-of-actions__note">
+                2 - Bussiéras et al, 1997;Beugnet et al, 2000;Mircean et al, 2010;Barutzki and Schaper,2011; Capari et
+                al,2013
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- range-of-actions end -->
+    <!-- information start -->
+    <section class="information">
+      <div class="information__caption">
+        <!-- <img class="caption-img" src="img/logo.png" alt="Логотип Broadline"> -->
+        <picture>
+          <source class="caption-img" type="image/webp" srcset="img/logo.webp">
+          <source class="caption-img" type="image/png" srcset="img/logo.png">
+          <img class="caption-img" src="img/logo.png" loading="lazy" alt="{{ bf_img_alt }}">
+        </picture>
+        ЗАСТОСОВУЮТЬ <span>ЩОМІСЯЦЯ</span>
+        <br>ДЛЯ ЗНИЖЕННЯ РИЗИКУ ЗАРАЖЕННЯ ВАШОГО КОТА
+      </div>
+      <div class="information-box">
+        <div class="information-box__block">
+          <!-- <img src="img/molecule.png" alt="Молекула"> -->
+          <picture>
+            <source type="image/webp" srcset="img/molecule.webp">
+            <source type="image/png" srcset="img/molecule.png">
+            <img src="img/molecule.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="information-box__text">
+            Речовина, що діє на гельмінтів, виводиться і не надає тривалого профілактичного ефекту.
+          </div>
+        </div>
+        <div class="information-box__block">
+          <!-- <img src="img/calendar.png" alt="Календар"> -->
+          <picture>
+            <source type="image/webp" srcset="img/calendar.webp">
+            <source type="image/png" srcset="img/calendar.png">
+            <img src="img/calendar.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="information-box__text">
+            Цикл розвитку деяких паразитів близько місяця. Якщо застосовувати препарат рідше - обробка може стати менш
+            ефективною.
+          </div>
+        </div>
+        <div class="information-box__block">
+          <!-- <img src="img/sleeping_cat.png" alt="Сплячий кіт"> -->
+          <picture>
+            <source type="image/webp" srcset="img/sleeping_cat.webp">
+            <source type="image/png" srcset="img/sleeping_cat.png">
+            <img src="img/sleeping_cat.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+          <div class="information-box__text">
+            Якщо кіт живе в родині, відсутність або поодинокі обробки можуть призвести до зараження людей, в тому числі
+            дітей.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- information end -->
+    <!-- mode-application start -->
+    <section class="mode-application">
+      <h2 class="h2-caption">Спосіб застосування</h2>
+      <div class="mode-application__wrapper mobile-padding">
+        <div class="mode-application__container">
+          <div class="mode-application__container-item">
+            <!-- <img src="img/scissors.png" alt="Ножиці"> -->
+            <picture>
+              <source type="image/webp" srcset="img/scissors.webp">
+              <source type="image/png" srcset="img/scissors.png">
+              <img src="img/scissors.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+            <p>
+              1. Розрізати блістер ножицями по лінії відрізу. Дістати аплікатор з упаковки.
+            </p>
+          </div>
+          <div class="mode-application__container-item">
+            <!-- <img src="img/syringe.png" alt="Шприц"> -->
+            <picture>
+              <source type="image/webp" srcset="img/syringe.webp">
+              <source type="image/png" srcset="img/syringe.png">
+              <img src="img/syringe.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+            <p>
+              2. При вертикальному положенні аплікатора відтягнути поршень назад.
+            </p>
+            <br>
+            <p>
+              3. Наконечник повернути і зняти.
+            </p>
+          </div>
+          <div class="mode-application__container-item">
+            <!-- <img src="img/use.png" alt="Використання"> -->
+            <picture>
+              <source type="image/webp" srcset="img/use.webp">
+              <source type="image/png" srcset="img/use.png">
+              <img src="img/use.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+            <p>
+              4. Розсунути шерсть по середній лінії шиї між основою черепа і лопатками і видавити весь вміст аплікатора
+              безпосередньо на шкіру в одне місце.
+            </p>
+          </div>
+        </div>
+        <div class="mode-application__video">
+          <iframe class="video" src="https://www.youtube.com/embed/7OMPt0w8Pto" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <iframe class="video" src="https://www.youtube.com/embed/u34tp_KnSpw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="instructions-button">
+        <button class="btn instructions-button__bth">Інструкція</button>
+      </div>
+      <div class="headline-buy-online">
+        Придбати
+        <!-- <img class="caption-img" src="img/logo.png" alt="Логотип Broadline"> -->
+        <picture>
+          <source class="caption-img" type="image/webp" srcset="img/logo.webp">
+          <source class="caption-img" type="image/png" srcset="img/logo.png">
+          <img class="caption-img" src="img/logo.png" loading="lazy" alt="{{ bf_img_alt }}">
+        </picture>
+        онлайн
+      </div>
+      <div class="online-shops">
+        <div>
+          <a href="#">
+            <!-- <img src="img/Zootovary.png" alt="Зоотовари"> -->
+            <picture>
+              <source type="image/webp" srcset="img/Zootovary.webp">
+              <source type="image/png" srcset="img/Zootovary.png">
+              <img src="img/Zootovary.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/Zoocomplex.png" alt="Зоокомплекс"> -->
+            <picture>
+              <source type="image/webp" srcset="img/Zoocomplex.webp">
+              <source type="image/png" srcset="img/Zoocomplex.png">
+              <img src="img/Zoocomplex.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/Rozetka.png" alt="Розетка"> -->
+            <picture>
+              <source type="image/webp" srcset="img/Rozetka.webp">
+              <source type="image/png" srcset="img/Rozetka.png">
+              <img src="img/Rozetka.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/Shinshilka.png" alt="Шиншилка"> -->
+            <picture>
+              <source type="image/webp" srcset="img/Shinshilka.webp">
+              <source type="image/png" srcset="img/Shinshilka.png">
+              <img src="img/Shinshilka.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/ryjii_kot.png" alt="Рудий кіт"> -->
+            <picture>
+              <source type="image/webp" srcset="img/ryjii_kot.webp">
+              <source type="image/png" srcset="img/ryjii_kot.png">
+              <img src="img/ryjii_kot.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/E-Zoo.png" alt="E-Zoo"> -->
+            <picture>
+              <source type="image/webp" srcset="img/E-Zoo.webp">
+              <source type="image/png" srcset="img/E-Zoo.png">
+              <img src="img/E-Zoo.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/Zoologia.png" alt="Зоологія"> -->
+            <picture>
+              <source type="image/webp" srcset="img/Zoologia.webp">
+              <source type="image/png" srcset="img/Zoologia.png">
+              <img src="img/Zoologia.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/pethouse.png" alt="Pethouse"> -->
+            <picture>
+              <source type="image/webp" srcset="img/pethouse.webp">
+              <source type="image/png" srcset="img/pethouse.png">
+              <img src="img/pethouse.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+        <div>
+          <a href="#">
+            <!-- <img src="img/zoolux.png" alt="Зоолюкс"> -->
+            <picture>
+              <source type="image/webp" srcset="img/zoolux.webp">
+              <source type="image/png" srcset="img/zoolux.png">
+              <img src="img/zoolux.png" loading="lazy" alt="{{ bf_img_alt }}">
+            </picture>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- mode of application end -->
+    <!-- section-form start -->
+    <section class="section-form">
+      <form class="form" action="">
+        <div class="form-block-left">
+          <div class="form-block-left__caption">Маєте запитання або побажання?</div>
+          <p>
+            <input class="form-block__input-name" type="text" placeholder="Ваше ім’я та прізвище">
+          </p>
+          <p class="form-block-left__indent">
+            <input class="form-block__input-telephone" type="text" placeholder="Телефон">
+            <input class="form-block__input-mail" type="text" placeholder="E-mail">
+          </p>
+          <textarea class="textarea" name="" id="" placeholder="Ваше питання"></textarea>
+        </div>
+        <div class="form-block-right">
+          <div class="form-block-right__caption">Маєте запитання або побажання?</div>
+          <button class="btn">Відправити</button>
+        </div>
+      </form>
+    </section>
+    <!-- section-form end -->
+    <!-- footer start -->
+    <footer class="footer mobile-padding">
+      <div class="footer-box">
+        <div class="footer-box__logo-triplex">
+          <div class="logo-triplex">
+            <a href="#">
+              <!-- <img class="logo-triplex__img" src="img/logo-triplex.png" alt="Логотип Тріплекс"> -->
+              <picture>
+                <source class="logo-triplex__img" type="image/webp" srcset="img/logo-triplex.webp">
+                <source class="logo-triplex__img" type="image/png" srcset="img/logo-triplex.png">
+                <img class="logo-triplex__img" src="img/logo-triplex.png" loading="lazy" alt="{{ bf_img_alt }}">
+              </picture>
+            </a>
+          </div>
+          <!-- не видно на больших экранах start -->
+          <div class="footer-box__logo-boehringer not-visible-on-large-screens">
+            <a href="#">
+              <!-- <img src="img/boehringer-ingelheim.png" alt="Логотип Boehringer"> -->
+              <picture>
+                <source type="image/webp" srcset="img/boehringer-ingelheim.webp">
+                <source type="image/png" srcset="img/boehringer-ingelheim.png">
+                <img src="img/boehringer-ingelheim.png" loading="lazy" alt="{{ bf_img_alt }}">
+              </picture>
+            </a>
+          </div>
+          <!-- не видно на больших экранах end -->
+        </div>
+        <!-- не видно на малых экранах start -->
+        <div class="footer-box__social not-visible-on-small-screens">
+          <div class="social">
+            Ми у соціальних мережах:
+            <div class="social__icons">
+              <a href="#">
+                <div class="instagram"></div>
+              </a>
+              <a href="#">
+                <div class="facebook"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- не видно на малых экранах end -->
+      </div>
+      <div class="footer-box">
+        <div class="footer-box__information">
+          <p>
+            49098, Україна, м. Дніпро, пров. Любарського 12а, тел.:+38(050)361-55-85
+          </p>
+          <p>
+            м. Київ, вул. Трублаїні 2а, тел.:+38(050)480-88-53
+          </p>
+          <p>
+            м. Одеса, вул. Просьолочна 10\2, тел.:+38(050)480-58-60
+          </p>
+          <p>
+            м. Хмельницький, вул. Кам’янецька 122\1, тел.:+38(050)361-71-69
+          </p>
+          <p>
+            zoo.triplex.com.ua
+          </p>
+          <!-- не видно на больших экранах start -->
+          <div class="social not-visible-on-large-screens">
+            <div class="social__box">
+              <div class="social__text">Ми у соціальних мережах:</div>
+              <div class="social__icons">
+                <a href="#">
+                  <div class="instagram"></div>
+                </a>
+                <a href="#">
+                  <div class="facebook"></div>
+                </a>
+              </div>
+            </div>
+            <div class="code">
+              RCV-FEL-0163-2021 <br> РП АА-06095-03-15
+            </div>
+          </div>
+          <!-- не видно на больших экранах end -->
+        </div>
+      </div>
+      <div class="footer-box not-visible-on-small-screens">
+        <a href="#">
+          <!-- <img src="img/boehringer-ingelheim.png" alt="Логотип Boehringer Ingelheim"> -->
+          <picture>
+            <source type="image/webp" srcset="img/boehringer-ingelheim.webp">
+            <source type="image/png" srcset="img/boehringer-ingelheim.png">
+            <img src="img/boehringer-ingelheim.png" loading="lazy" alt="{{ bf_img_alt }}">
+          </picture>
+        </a>
+        <div class="code">
+          RCV-FEL-0163-2021 <br> РП АА-06095-03-15
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </main>
+</body>
+
+</html>
