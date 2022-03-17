@@ -1,0 +1,15 @@
+$color-green: rgba(0, 128, 102, 1);
+$color-dark-green: #0f4735;
+$color-gradient: linear-gradient(140.63deg, #367d72 11.39%, #3db890 92.26%);
+$color-gradient-hover: linear-gradient(140.63deg, #1c4741 11.39%, #197959 92.26%);
+$color-gradient-gray: radial-gradient(
+    36.61% 75.36% at -1.17% 92.24%,
+    rgba(84, 84, 84, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  ),
+  radial-gradient(30.42% 119.91% at 85.23% 63.55%, rgba(84, 84, 84, 0.2) 0%, rgba(255, 255, 255, 0.2) 100%),
+  linear-gradient(100.09deg, rgba(221, 214, 211, 0.5) 11.31%, rgba(221, 214, 211, 0) 79.65%);
+$color-white: #ffffff;
+$color-red: #ca2112;
+$btn-font: 3.5rem;
+$border-radius: 10px;
